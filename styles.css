@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 *{
     margin: 0;
@@ -48,13 +48,11 @@ html{
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
-
 }
 
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
-
 }
 
 #menu-icon{
@@ -73,10 +71,8 @@ section{
     align-items: center;
     padding: 0 9%;
     background: url('/imagesfolder/1.jpg') no-repeat;
-    background-size: 480px auto; 
+    background-size: 480px auto;
     background-position: calc(100% - 50px) calc(50% + 20px);
-    filter: grayscale(100%) contrast(1.2) brightness(0.8); 
-    
 }
 
 .home-content{
@@ -104,9 +100,16 @@ section{
 .btn-box{
     position: relative;
     display: flex;
+    height: 5rem;
+}
+
+.home-buttons {
     justify-content: space-between;
     width: 34.5rem;
-    height: 5rem;
+}
+
+.about-buttons {
+    justify-content: center;
 }
 
 .btn-box .btn{
@@ -221,7 +224,7 @@ span{
     position: relative;
     width: 25rem;
     height: 25rem;
-    display:flex;
+    display: flex;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -230,7 +233,7 @@ span{
     width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
-} 
+}
 .about-img .circle-spin{
     position: absolute;
     top: 50%;
@@ -242,7 +245,7 @@ span{
     border-top: .2rem solid var(--second-bg-color);
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
+    border-right: .2rem solid var (--main-color);
 }
 .about-content{
     text-align: center;
@@ -254,14 +257,20 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-.btns-box{
-    display: flex;
-    width: 15rem;
-}
 
-.btns-box .btns a{
-    padding-left: 20px;
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    min-height: auto;
+    padding-bottom: 5rem;
 }
-.btn-box .btns a::before{
-    background: var(--second-bg-color);
+.education .education-row{
+    display: flex;
+    flex-grow: wrap;
+    gap: 5rem;
+}
+.education-row .education-column{
+    flex: 1 1 40rem;
 }
